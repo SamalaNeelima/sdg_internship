@@ -5,6 +5,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import MobilePrivacyPolicy from './pages/MobilePrivacyPolicy';
 import Header from './pages/Header';
 import Footer from './pages/Footer';
+import './pages/Responsiveness.css'
 import './App.css'
 
 
