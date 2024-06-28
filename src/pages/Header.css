@@ -1,24 +1,22 @@
-header {
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Styling */
+  .header {
     width: 100%;
     height: 300px; /* Adjust the height as needed */
     background-image: url('../assets/images/color.jpg'); /* Adjust the path as needed */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
   }
   
-
-
-/* General Reset */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Options Styling */
-.options {
+  /* Options Styling */
+  .options {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,9 +28,9 @@ body, html {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
     width: 300px; /* Adjust width as needed */
     box-sizing: border-box; /* Include padding in the width */
-}
-
-.options a {
+  }
+  
+  .options a {
     color: white;
     text-decoration: none;
     margin: 10px 0;
@@ -41,48 +39,49 @@ body, html {
     transition: background-color 0.3s, border-left 0.3s;
     border-left: 4px solid transparent; /* Add border for hover effect */
     border-radius: 2px; /* Slightly round corners */
-}
-
-.options a:hover {
+  }
+  
+  .options a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Light selection background */
     border-left: 4px solid #fff; /* Highlight border on the left */
-    text-decoration: none; /* Ensure no underline on hover */
-}
-
-
-.options a.active {
+  }
+  
+  .options a.active {
     background-color: gray;
     color: white;
   }
-
-/* Header Title Styling */
-h1 {
-    
+  
+  /* Header Title Styling */
+  h1 {
     bottom: 20px;
     left: 220px; /* Adjust left position to account for the width of .options */
     margin: 0;
-    color:black;
-}
-.header-content {
+    color: black;
+  }
+  
+  .header-content {
     position: relative;
     text-align: center;
     width: 100%;
     top: 100px;
-}
-
-.header-content h1 {
+  }
+  
+  .header-content h1 {
     margin: 0;
     font-size: 2.5rem; /* Adjust font size as needed */
     color: white; /* Ensure the text is readable over the background image */
-}
-.container {
+  }
+  
+  /* Container for Home Button */
+  .container {
     position: relative;
     width: 100%;
     max-width: 1200px; /* Adjust max-width as needed */
     margin: 0 auto; /* Center align container */
-}
-.home-button {
-    position:absolute;
+  }
+  
+  .home-button {
+    position: absolute;
     top: 100px; /* Adjust top position */
     right: 20px; /* Adjust right position */
     padding: 10px 20px; /* Adjust padding as needed */
@@ -90,10 +89,61 @@ h1 {
     background-color: #24272C;
     text-decoration: none;
     /* transition: background-color 0.3s ease; Smooth transition on hover */
-}
-
-.home-button:hover {
+  }
+  
+  .home-button:hover {
     background-color: gray; /* Darker color on hover */
-}
-
+  }
+  
+  /* Mobile View Adjustments */
+  @media (max-width: 768px) {
+    .header {
+      height: auto; /* Allow header to adjust based on content */
+    }
+    
+    .options {
+      position: static;
+      background: none;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .options a {
+      display: inline-block;
+      margin: 5px;
+    }
+  
+    .header-content {
+      top: 20px;
+      padding: 20px 10px;
+    }
+  
+    .header-content h1 {
+      font-size: 2rem; /* Smaller font size */
+    }
+  
+    .home-button {
+      position: static;
+      display: block;
+      margin: 20px auto; /* Center the home button */
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .options a {
+      font-size: 14px; /* Smaller font size for links */
+      padding: 5px;
+    }
+  
+    .header-content h1 {
+      font-size: 1.5rem; /* Further reduce font size */
+    }
+  
+    .home-button {
+      font-size: 14px; /* Smaller font size for the button */
+      padding: 8px 15px; /* Adjust padding */
+    }
+  }
   

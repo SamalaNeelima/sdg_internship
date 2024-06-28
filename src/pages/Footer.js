@@ -1,12 +1,12 @@
 import React from 'react';
-import './Footer.css'; // Make sure this path is correct
+import './Footer.css';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-main container">
         <div className="footer-cta">
-        <div className="animated-text">
+          <div className="animated-text">
             <div>Enough Talk,</div>
             <div>
               <span>Let's Build Something Together</span>
@@ -16,8 +16,7 @@ const Footer = () => {
       </div>
       <div className="footer-content container">
         <div className="footer-logo">
-        <img src="https://sdgsolutions.in/wp-content/uploads/2023/03/SDG-Logo.png" alt="SDG Logo" />
-
+          <img src="https://sdgsolutions.in/wp-content/uploads/2023/03/SDG-Logo.png" alt="SDG Logo" />
           <p>Copyright © 2024 All rights reserved by SDG Solutions. Built with love in [Your Location].</p>
         </div>
         <div className="footer-links">
